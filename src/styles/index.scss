@@ -1,0 +1,23 @@
+@import './reset';
+@import './fonts';
+@import '~antd/dist/antd.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: BR;
+  background-image: url(../assets/img/bg-bottom.png),
+    url(../assets/img/bg-top.png);
+  background-position: 0 100%, 100% 0;
+  background-size: 50% auto, 50% auto;
+  background-repeat: no-repeat;
+}
+
+.row {
+  max-width: 1440px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
