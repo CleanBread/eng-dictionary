@@ -1,0 +1,26 @@
+.btn {
+  background: $yellow;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  color: $text;
+  font-family: BB;
+  height: auto;
+  border: none;
+  line-height: unset;
+  border-bottom: 4px solid #d8ab03;
+  transition: 0.1s;
+  &:hover {
+    background: $yellow-hover;
+    color: $text;
+    border-color: #d8ab03;
+  }
+  &:focus {
+    border-bottom: 4px solid #d8ab03;
+    color: $text;
+    background: $yellow;
+  }
+  &:active {
+    border-bottom: 0px solid #d8ab03;
+  }
+}

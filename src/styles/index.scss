@@ -1,7 +1,8 @@
 @import './reset';
 @import './fonts';
+@import './vars';
 @import '~antd/dist/antd.css';
-
+@import './components/index.scss';
 * {
   box-sizing: border-box;
 }
