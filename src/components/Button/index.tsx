@@ -2,14 +2,24 @@ import React from 'react';
 import classNames from 'classnames';
 import { Button as AntdBtn } from 'antd';
 
-type ButtonProps = {
+interface ButtonProps {
   type?: string;
-};
+  size?: string;
+  position?: string;
+  onClick?: () => void;
+}
 
-const Button: React.FunctionComponent<ButtonProps> = ({ type, children }) => {
+const Button: React.FunctionComponent<ButtonProps> = ({
+  type,
+  size,
+  position,
+  onClick,
+  children,
+}) => {
   return (
     <AntdBtn
-      className={classNames('btn', {
+      onClick={onClick}
+      className={classNames('btn', position, size, {
         err: type === 'err',
       })}>
       {children}

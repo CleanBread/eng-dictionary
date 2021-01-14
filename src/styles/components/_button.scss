@@ -1,26 +1,34 @@
 .btn {
   background: $yellow;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 14px;
+  display: block;
   color: $text;
-  font-family: BB;
   height: auto;
   border: none;
   line-height: unset;
-  border-bottom: 4px solid #d8ab03;
-  transition: 0.1s;
+  box-shadow: 0 3px 0 #d8ab03;
+  transition: 0.1s transform, 0.1s box-shadow;
+  transform: none;
   &:hover {
     background: $yellow-hover;
     color: $text;
-    border-color: #d8ab03;
   }
   &:focus {
-    border-bottom: 4px solid #d8ab03;
+    border-bottom: none;
     color: $text;
     background: $yellow;
   }
   &:active {
-    border-bottom: 0px solid #d8ab03;
+    box-shadow: 0 0px 0 #d8ab03;
+    transition-delay: 0, 0.2s;
+    transform: translateY(3px);
+  }
+  &.lg {
+    padding: 10px 20px;
+  }
+  &.center {
+    margin: 0 auto;
   }
 }

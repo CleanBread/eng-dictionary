@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             <div className="header__logo-text">Jungle</div>
           </Link>
           <div className="header__nav">
-            <Link className="header__nav-item">Наборы слов</Link>
+            <Link className="header__nav-item active">Наборы слов</Link>
             <Link className="header__nav-item">Тренировки</Link>
             <Link className="header__nav-item">Словарь</Link>
             <Button>Выйти</Button>
