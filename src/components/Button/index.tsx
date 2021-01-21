@@ -20,7 +20,8 @@ const Button: React.FunctionComponent<ButtonProps> = ({
     <AntdBtn
       onClick={onClick}
       className={classNames('btn', position, size, {
-        err: type === 'err',
+        btn__err: type === 'err',
+        btn__success: type === 'success',
       })}>
       {children}
     </AntdBtn>

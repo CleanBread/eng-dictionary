@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { Button } from '../index';
 
@@ -12,14 +12,20 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="row">
         <div className="header__content">
-          <Link to="/" className="header__logo">
+          <NavLink to="/wordsets" className="header__logo">
             <img src={logoImg} alt="" className="header__logo-img" />
             <div className="header__logo-text">Jungle</div>
-          </Link>
+          </NavLink>
           <div className="header__nav">
-            <Link className="header__nav-item active">Наборы слов</Link>
-            <Link className="header__nav-item">Тренировки</Link>
-            <Link className="header__nav-item">Словарь</Link>
+            <NavLink exact to="/wordsets" className="header__nav-item">
+              Наборы слов
+            </NavLink>
+            <NavLink exact to="/" className="header__nav-item">
+              Тренировка слов
+            </NavLink>
+            <NavLink exact to="/" className="header__nav-item">
+              Словарь
+            </NavLink>
             <Button>Выйти</Button>
           </div>
         </div>

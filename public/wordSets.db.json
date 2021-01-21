@@ -1,0 +1,16 @@
+{
+  "wordsets": [
+    {
+      "id": 0,
+      "img": "../../assets/img/word-sets-img.jpg",
+      "wordCount": 28,
+      "name": "Глаголы говорения"
+    },
+    {
+      "id": 1,
+      "img": "../../assets/img/word-sets-img.jpg",
+      "wordCount": 38,
+      "name": "Топ-100 глаголов для начинающих"
+    }
+  ]
+}

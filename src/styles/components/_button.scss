@@ -8,9 +8,9 @@
   height: auto;
   border: none;
   line-height: unset;
-  box-shadow: 0 3px 0 #d8ab03;
+  box-shadow: 0 3px 0 $yellow-shadow;
   transition: 0.1s transform, 0.1s box-shadow;
-  transform: none;
+  transform: translateY(-1.5px);
   &:hover {
     background: $yellow-hover;
     color: $text;
@@ -21,14 +21,31 @@
     background: $yellow;
   }
   &:active {
-    box-shadow: 0 0px 0 #d8ab03;
+    box-shadow: 0 0px 0 $yellow-shadow;
+    transform: translateY(1.5px);
     transition-delay: 0, 0.2s;
-    transform: translateY(3px);
   }
   &.lg {
     padding: 10px 20px;
   }
+  &.sm {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
   &.center {
     margin: 0 auto;
+  }
+  &__success {
+    box-shadow: 0 3px 0 $green-shadow;
+    background: $green;
+    &:active {
+      box-shadow: 0 3px 0 $green-shadow;
+    }
+    &:hover {
+      background: $green-hover;
+    }
+    &:focus {
+      background: $green;
+    }
   }
 }

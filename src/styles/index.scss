@@ -7,7 +7,10 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  min-height: 100%;
+  height: auto;
+}
 body {
   font-family: BR;
   background-image: url(../assets/img/bg-bottom.png),
@@ -15,15 +18,23 @@ body {
   background-position: 0 100%, 100% 0;
   background-size: 50% auto, 50% auto;
   background-repeat: no-repeat;
+  min-height: 100%;
+  padding-top: 59px;
+  height: auto;
 }
 #root {
-  height: 100%;
+  min-height: 100%;
 }
 .jungle {
-  height: 100%;
+  min-height: 100%;
+  padding: 50px 0;
 }
 a {
   font-family: BR;
+  color: $text;
+  &:hover {
+    color: $green;
+  }
 }
 
 .row {
@@ -31,6 +42,9 @@ a {
   padding: 0 10px;
   width: 100%;
   margin: 0 auto;
+  &-md {
+    max-width: 1140px;
+  }
 }
 
 .box {
