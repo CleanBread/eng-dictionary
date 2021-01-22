@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             <NavLink exact to="/wordsets" className="header__nav-item">
               Наборы слов
             </NavLink>
-            <NavLink exact to="/" className="header__nav-item">
+            <NavLink exact to="/words" className="header__nav-item">
               Тренировка слов
             </NavLink>
             <NavLink exact to="/" className="header__nav-item">

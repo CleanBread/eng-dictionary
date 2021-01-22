@@ -1,0 +1,24 @@
+.words {
+  &__info {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    &-card {
+      padding: 30px 40px;
+      background: #f6f6f6;
+      border: 2px solid #d2d2d2;
+      border-radius: 6px;
+      & + & {
+        margin-top: 15px;
+      }
+      &-title {
+        font-size: 20px;
+        font-family: BB;
+      }
+      &-subtitle {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
