@@ -1,0 +1,53 @@
+// @import './reset';
+@import './fonts';
+@import './vars';
+@import './typography';
+@import '~antd/dist/antd.css';
+@import './components/index.scss';
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+}
+body {
+  font-family: BR;
+  background-image: url(../assets/img/bg-bottom.png),
+    url(../assets/img/bg-top.png);
+  background-position: 0 100%, 100% 0;
+  background-size: 50% auto, 50% auto;
+  background-repeat: no-repeat;
+  padding-top: 59px;
+}
+#root,
+.jungle,
+body {
+  min-height: calc(100vh - 59px);
+}
+.jungle {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 2;
+}
+a {
+  font-family: BR;
+  color: $text;
+  &:hover {
+    color: $green;
+  }
+}
+
+.row {
+  max-width: 1240px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+  &-md {
+    max-width: 1140px;
+  }
+}
